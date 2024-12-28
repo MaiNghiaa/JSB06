@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ket noi css -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <!-- Inline Css -->
+
+    <!-- <p style="color:aquamarine">Hom nay la mot ngay dep troi</p> -->
+    <!-- Internal -->
+    <style>
+        /*
+        *Luu y: cos the đặt nhiều thẻ class trong 1 thẻ tag ( các class khác nhau ngăn
+        cáhc bằng dấu space ( dấu cách )
+        )
+        Tuong tac voi class dung dau . + ten class
+        Tuong tac  voi id dung dau # + ten id
+        */
+        /* Vd */
+        /* .thepclass {
+            color: aquamarine;
+        }
+
+        #thepid {
+            background-color: bisque;
+        } */
+    </style>
+
+    <!-- <p id="thepid" class="thepclass thepclasee_2">Hom nya la Internal</p> -->
+
+    <!-- External Hieeur đơn giản là tạo file css -> gắn link -> css ở file css đó 
+        khác internal là:
+        + Internal thì ở trên 1 file html 
+        + External thì sẽ chia html và css thành 2 file khác nhau 
+    -->
+
+
+    <style>
+        *,
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* đây là chọn tất cả các thẻ tag có class là display */
+        /* .demodisplay{
+
+        } */
+        /* đây là chọn tất cả các thẻ <p> có class là display */
+        p.demodisplay {
+            /* display: block; */
+            /* display: inline; */
+            /* padding: 10px; */
+            background-color: lawngreen;
+        }
+
+        p.demodisplay2 {
+            /* display: block; */
+            /* display: inline; */
+            /* display:  */
+            margin: 10px;
+            /* padding: 10px; */
+            background-color: brown;
+
+
+        }
+    </style>
+
+    <!-- Thuoc tinh display -->
+    <!-- <p class="demodisplay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus officia libero
+        consequuntur!</p>
+    <p class="demodisplay2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus officia libero
+        consequuntur!</p> -->
+
+    <div
+        style="width: 500px;height: 350px; background-color: #ffffff; margin: 0 auto; display: flex; flex-direction: column; gap:12px">
+        <div style="display: flex;gap:12px">
+            <div style="background-color: red; width: 200px; height: 150px">
+            </div>
+            <div style="background-color: red; width: 300px; height: 150px""></div>
+        </div>
+        <div style=" display: flex;gap:12px">
+                <div style="background-color: red; width: 200px; height: 150px">
+                </div>
+                <div style="background-color: red; width: 300px; height: 150px""></div>
+        </div>
+    </div>
+</body>
+
+</html>
